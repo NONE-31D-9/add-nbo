@@ -19,8 +19,7 @@ int main(int argc, char* argv[]) {
         fclose(fp1);
         fclose(fp2);
         
-        int result = add_nbo(buffer1, buffer2);
-	printf("%d\n", result);
+        add_nbo(buffer1, buffer2);
 
 	return 0;
         
