@@ -15,8 +15,12 @@ int main(int argc, char* argv[]) {
         
         fread(buffer1, sizeof(buffer1), 1, fp1);
         fread(buffer2, sizeof(buffer2), 1, fp2);
-	
-	printf("%x\n", buffer1);
+        
+        fclose(fp1);
+        fclose(fp2);
+        
+        int result = add_nbo(buffer1, buffer2);
+	printf("%d\n", result);
 
 	return 0;
         

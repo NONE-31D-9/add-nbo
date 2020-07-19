@@ -5,4 +5,4 @@
 #include <stdio.h> // for printf
 #include <netinet/in.h>
 
-void add_nbo(uint32_t n1, uint32_t n2);
+int add_nbo(uint8_t* buf1, uint8_t* buf2);
